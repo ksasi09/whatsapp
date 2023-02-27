@@ -12,7 +12,7 @@ const ChatInterface = () => {
         <SideBar />
       </div>
       {/* chat */}
-      <div className="chat max-w-chatInterface w-full">chat goes hereee</div>
+      <div className="chat max-w-chatInterface w-full">chat</div>
     </section>
   );
 };
