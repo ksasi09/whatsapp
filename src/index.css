@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+.optionsToggler {
+  scale: 1;
+  transition: 0.6s ease-in-out;
+}
+
+.loader {
+  border: 2px solid #2a2f32;
+  border-radius: 50%;
+  border-top: 2px solid #00af9c;
+  width: 25px;
+  height: 25px;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.customTopBorder {
+  border-top: 0.7px solid rgba(241, 241, 242, 0.1);
+}
+
+.customBottomBorder {
+  border-bottom: 0.7px solid rgba(241, 241, 242, 0.1);
+}
+
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.2) hsla(0, 0%, 100%, 0.1);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+@tailwind utilities;
